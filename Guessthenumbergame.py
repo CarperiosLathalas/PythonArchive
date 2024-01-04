@@ -26,6 +26,6 @@ def guessingGame():
        number = str(number)
        print ("You've done messed up. The number I was thinking of was ",number,)
    playAgain == input("Play again (y/n)")
-while playAgain == y:
+while playAgain == "y":
    guessingGame()
 
