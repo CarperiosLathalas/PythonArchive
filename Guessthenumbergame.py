@@ -1,4 +1,7 @@
 import random
+
+playAgain = "y"
+
 def guessingGame():
    guessesTaken = 0
    print ("Hello, what is your name?")
@@ -21,7 +24,8 @@ def guessingGame():
        print ("Good job, ",myName,". You guessed my number in ",guessesTaken," guesses. Impressive but you can do better. Play again?")
    if guess != number:
        number = str(number)
-       print ("You've done messed up. The number I was thinking of was ",number,". You really suck at this game. Go home.")
-while (True):
+       print ("You've done messed up. The number I was thinking of was ",number,)
+   playAgain == input("Play again (y/n)")
+while playAgain == y:
    guessingGame()
 
